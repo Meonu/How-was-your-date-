@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <script src="signupfunc.js"></script>
+
+</head>
+<body>
+ 
+  <form action="signup_chk.php" name = "regiform" method="post" onsubmit="return rightsign()">
+    <fieldset style = 'width :300px;'>
+        <legend><h1>Sign Up</h1></legend>
+        <pre>
+        <p>아이디:  <input type = "text" name = 'userid' id = 'userid' placeholder="ID" required>
+            <input type ="hidden" id="decide_id" name = "decide_id"> <!--실질적으로 아이디를 보냄-->
+       <br><span id = "decide" style ="color: red;">ID 중복 여부를 확인해주세요.</span>
+        <input type="button" id = "checkbutton" value="ID 중복 검사." onclick="check()"></p> 
+        <p>비밀번호:<input type = "password" name = 'userpw' id = 'userpw' placeholder="PASSWORD">
+       <br>확인:    <input type = "password" name = 'pwconfirm' id = 'pwconfirm' placeholder="confirm"></p> 
+        <p><input type = "submit" value = 'SignUp' name = 'SignUp_btn' id = 'SignUp_btn' disabled = 'true'></p>     
+        </pre>
+    </fieldset>
+    </form>
+</body>
+
+</html>
