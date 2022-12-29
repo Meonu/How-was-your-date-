@@ -46,7 +46,7 @@ ini_set("display_errors",1);
     <h1>How was your Date?</h1>
     <div>
     <form action="./posting.php" method="POST">
-        <input type="text" name="date" id="date" placeholder="22/12/31" pattern="[A-Za-z0-9/]{5,20}" required>
+        <input type="text" name="date" id="date" placeholder="22/12/31" pattern="[A-Za-z0-9/]{5,15}" required>
         <select action="./posting.php" name="how" id="how">
             <option value="soso">기분 선택</option>
             <option value="gut">gut</option>
