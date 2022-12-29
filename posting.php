@@ -23,6 +23,23 @@ $how=$_POST["how"];
 
 $query = "insert into dates (dates, feel)  values ('$date','$how')";
 
+if(mysqli_query($connect,$query))
+{
+   ?>
+    <script>
+    alert("게시글 등록이 완료되었습니다.");
+    location.href="./index.php";
+    </script>
+    <?php
+}
+else
+{
+    ?>
+    <script>
+    alert("데이터베이스 연동을 실패하였습니다.");
+    </script>
+    <?php
+}
 
 
 ?>
