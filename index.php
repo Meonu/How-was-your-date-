@@ -57,7 +57,7 @@ session_start();
     </div>
     
     <?php 
-     $sql = mysqli_query($connect,"select * from dates where sessionid = {$_SESSION['userid']}");
+     $sql = mysqli_query($connect,"select * from dates where session_id = {$_SESSION['userid']}");
      while($board = $sql -> fetch_array())
      {
      ?>
