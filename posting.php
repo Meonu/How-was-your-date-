@@ -1,6 +1,6 @@
 <?php
-error_reporting(E_ALL); 
-ini_set("display_errors",1);
+//error_reporting(E_ALL); 
+//ini_set("display_errors",1);
 
 session_start();
 
@@ -48,7 +48,7 @@ else
     ?>
     <script>
     alert("데이터베이스 연동을 실패하였습니다.");
-    //location.href="./index.php";
+    location.href="./index.php";
     </script>
     <?php
 }
