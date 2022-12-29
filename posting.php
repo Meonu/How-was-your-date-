@@ -48,7 +48,7 @@ else
     ?>
     <script>
     alert("데이터베이스 연동을 실패하였습니다.");
-    mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+    die(mysql_error());
     //location.href="./index.php";
     </script>
     <?php
