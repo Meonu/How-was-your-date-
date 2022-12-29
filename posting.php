@@ -14,7 +14,6 @@ if (!isset($_SESSION['userid'])) {?>
     <?php
 }
 
-
 $password = "kyw@514514514";
 
 $servername = "localhost";
@@ -35,7 +34,7 @@ $date=$_POST["date"];
 $how=$_POST["how"];
 $sessionid = $_SESSION['userid'];
 
-$query = "insert into dates (dates, feel, sessionid)  values ('$date','$how','$sessionid')";
+$query = "insert into dates (sessionid, dates, feel)  values ('$sessionid','$date','$how')";
 
 if(mysqli_query($connect,$query))
 {
