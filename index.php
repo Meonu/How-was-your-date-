@@ -64,7 +64,7 @@ session_start();
      <table>
          <tr>
              <td width = "100"><?php echo $board['dates']; ?></td>
-             <td width = "100"><?php echo $board['feel'];?></a></td>
+             <td width = "100"><?php echo $board['feel'];?></td>
          </tr>
      </table>
      <?php } ?>
