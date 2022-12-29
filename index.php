@@ -25,9 +25,10 @@ ini_set("display_errors",1);
 </head>
 <body>
         <?php
-        $userid = $_SESSION['userid'];
+        $userid = '';
         if (isset($_SESSION['userid'])) {
             echo "{$_SESSION['userid']}님 환영합니다  ";
+            $userid = $_SESSION['userid'];
         ?>
             <li>
                 <a href="./logout.php">로그아웃</a>
@@ -68,6 +69,7 @@ ini_set("display_errors",1);
         </table>
     
     <?php 
+    if (isset($_SESSION['userid'])){
      $sql = mysqli_query($connect,"select * from dates where sessionid='$userid'");
      while($board = $sql -> fetch_array())
      {
@@ -78,7 +80,8 @@ ini_set("display_errors",1);
              <td width = "100"><?php echo $board['feel'];?></td>
          </tr>
      </table>
-     <?php } ?>
+     <?php }
+     } ?>
 
     
 </body>
