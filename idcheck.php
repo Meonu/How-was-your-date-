@@ -6,7 +6,7 @@
     
     $servername = "localhost";
 
-    $user = "root";
+    $user = "yeonugim";
 
     $DBname = "databases";
  
