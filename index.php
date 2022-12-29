@@ -8,7 +8,7 @@ session_start();
     
         $user = "root";
     
-        $DBname = "databases";
+        $DBname = "kimyeonwoo";
      
     
         $connect = new mysqli($servername, $user, $password, $DBname);
