@@ -19,7 +19,7 @@ if (!$connect)
 $date=$_POST["date"];
 $how=$_POST["how"];
 
-$query = "insert into board (date, how)  values ('$date','$how')";
+$query = "insert into dates (dates, feel)  values ('$date','$how')";
 
 
 
