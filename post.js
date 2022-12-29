@@ -20,5 +20,5 @@ function check(){
     http.send(params);
 
     
-    setTimeout(location.reload(),500);
+    setTimeout(location.reload(),1000);
 }
