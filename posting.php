@@ -21,7 +21,7 @@ else
 $date=$_POST["date"];
 $how=$_POST["how"];
 
-$query = "insert into dates (dates, feel)  values ('$date','$how')";
+$query = "insert into dates (feel)  values ('$how')";
 
 if(mysqli_query($connect,$query))
 {
