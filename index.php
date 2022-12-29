@@ -60,7 +60,7 @@ ini_set("display_errors",1);
     </div>
     
     <?php 
-     $sql = mysqli_query($connect,"select * from dates where sessionid=$userid");
+     $sql = mysqli_query($connect,"select * from dates where sessionid='$userid'");
      while($board = $sql -> fetch_array())
      {
      ?>
