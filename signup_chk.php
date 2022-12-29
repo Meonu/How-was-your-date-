@@ -34,16 +34,16 @@ $sql = "insert into mem_info(userid,userpw) VALUES('$userid','$hashedPassword')"
         echo "오류가 발생했습니다.";
         return false;
     }
-    else if(!$result){
+    else if($result){
         echo "<span style='color:red;'>$userid</span> 는 중복된 아이디입니다.";
-        ?><p><input type=button value="다른 ID 사용" onclick="location.href=''"></p><?php
+        ?><p><input type=button value="다른 ID 사용" onclick="location.href='./SignUp.html'"></p><?php
     }
     else
     {   
     ?>
         <script>
         alert("회원가입이 완료되었습니다.");
-        location.href="../index.php";
+        location.href="./index.php";
         </script>   
     <?php
     }
