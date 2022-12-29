@@ -45,7 +45,7 @@ session_start();
     <form action="./posting.php" method="POST">
         <input type="text" name="date" id="date" placeholder="22/12/31" pattern="[A-Za-z0-9/]{2,6}" required>
         <select action="./posting.php" name="how" id="how">
-            <option value="">기분 선택</option>
+            <option value="soso">기분 선택</option>
             <option value="gut">gut</option>
             <option value="Sehr gut">Sehr gut</option>
             <option value="Super Sehr gut">Super Sehr gut</option>

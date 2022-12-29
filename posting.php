@@ -2,6 +2,19 @@
 error_reporting(E_ALL); 
 ini_set("display_errors",1);
 
+session_start();
+
+
+
+if (!isset($_SESSION['userid'])) {?>
+    <script>
+    alert("로그인을 해주세요");
+    location.href="./index.php";
+    </script>
+    <?php
+}
+
+
 $password = "kyw@514514514";
 
 $servername = "localhost";
@@ -20,8 +33,9 @@ else
 
 $date=$_POST["date"];
 $how=$_POST["how"];
+$sessionid = $_SESSION['userid'];
 
-$query = "insert into dates (feel)  values ('$how')";
+$query = "insert into dates (dates, feel, session_id)  values ('$date','$how','$sessionid')";
 
 if(mysqli_query($connect,$query))
 {
@@ -37,6 +51,7 @@ else
     ?>
     <script>
     alert("데이터베이스 연동을 실패하였습니다.");
+    location.href="./index.php";
     </script>
     <?php
 }
