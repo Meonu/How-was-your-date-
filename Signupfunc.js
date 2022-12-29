@@ -40,21 +40,4 @@ function check()
         else return true;
     }
 
-    function decide()
-    {
-        document.getElementById("decide").innerHTML = "<span style='color:blue;'>사용 가능한 ID 입니다.</span>"
-        document.getElementById("decide_id").value = document.getElementById("userid").value
-        document.getElementById("userid").disabled = true
-        document.getElementById("SignUp_btn").disabled = false
-        document.getElementById("checkbutton").value = "다른 ID로변경"
-        document.getElementById("checkbutton").setAttribute("onclick","change()")
-    }
-    function change(){
-	    document.getElementById("decide").innerHTML = "<span style='color:red;'>ID 중복 여부를 확인해주세요.</span>"
-	    document.getElementById("userid").disabled = false
-	    document.getElementById("userid").value = ""
-        document.getElementById("decide_id") = null
-	    document.getElementById("SignUp_btn").disabled = true
-	    document.getElementById("checkbutton").value = "ID 중복 검사"
-	    document.getElementById("checkbutton").setAttribute("onclick", "check()")
-    }
+   
