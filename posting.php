@@ -50,7 +50,7 @@ else
     ?>
     <script>
     alert("데이터베이스 연동을 실패하였습니다.");
-    location.href="./index.php";
+    //location.href="./index.php";
     </script>
     <?php
 }
