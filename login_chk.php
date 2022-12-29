@@ -1,6 +1,6 @@
 <?php
 
-$connect = new mysqli("localhost","yeonugim","kyw@514514514","databases");
+$connect = new mysqli("localhost","root","kyw@514514514","databases");
 
 
 $userid = htmlentities($_POST["userid"]);

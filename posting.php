@@ -6,7 +6,7 @@ $password = "kyw@514514514";
 
 $servername = "localhost";
 
-$user = "yeonugim";
+$user = "root";
 
 $DBname = "databases";
 

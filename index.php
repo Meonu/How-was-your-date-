@@ -6,7 +6,7 @@ session_start();
         
         $servername = "localhost";
     
-        $user = "yeonugim";
+        $user = "root";
     
         $DBname = "databases";
      
