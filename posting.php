@@ -8,7 +8,7 @@ $servername = "localhost";
 
 $user = "root";
 
-$DBname = "databases";
+$DBname = "kimyeonwoo";
 
 
 $connect = new mysqli($servername, $user, $password, $DBname);
