@@ -58,6 +58,14 @@ ini_set("display_errors",1);
         <button type="submit">Save</button>
     </form>
     </div>
+    <table class="list-table">
+            <thead>
+            <tr>
+                <th width="100">날짜</th>
+                <th width="100">기분</th>
+            </tr>
+            </thead>
+        </table>
     
     <?php 
      $sql = mysqli_query($connect,"select * from dates where sessionid='$userid'");
