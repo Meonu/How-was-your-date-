@@ -52,9 +52,10 @@ session_start();
             <option value="sad">sad</option>
             <option value="mad">mad</option>
         </select>
+        <button type="submit">Save</button>
     </form>
     </div>
-    <button type="submit">Save</button>
+    
     <?php 
      $sql = mysqli_query($connect,"select * from dates where sessionid = {$_SESSION['userid']}");
      while($board = $sql -> fetch_array())
