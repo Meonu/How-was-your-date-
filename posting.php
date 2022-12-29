@@ -35,7 +35,7 @@ $date=$_POST["date"];
 $how=$_POST["how"];
 $sessionid = $_SESSION['userid'];
 
-$query = "insert into dates (dates, feel, session_id)  values ('$date','$how','$sessionid')";
+$query = "insert into dates (dates, feel, sessionid)  values ('$date','$how','$sessionid')";
 
 if(mysqli_query($connect,$query))
 {

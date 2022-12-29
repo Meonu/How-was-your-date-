@@ -25,6 +25,7 @@ ini_set("display_errors",1);
 </head>
 <body>
         <?php
+        $userid = $_SESSION['userid'];
         if (isset($_SESSION['userid'])) {
             echo "{$_SESSION['userid']}님 환영합니다  ";
         ?>
@@ -59,7 +60,7 @@ ini_set("display_errors",1);
     </div>
     
     <?php 
-     $sql = mysqli_query($connect,"select * from dates");
+     $sql = mysqli_query($connect,"select * from dates where sessionid=$userid");
      while($board = $sql -> fetch_array())
      {
      ?>
