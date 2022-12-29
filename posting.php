@@ -27,14 +27,12 @@ $connect = new mysqli($servername, $user, $password, $DBname);
 
 if (!$connect)
  echo "<h2>서버와의 연결 실패</h2>";
-else
- echo "<h2>연결 성공!</h2>";
 
 $date=$_POST["date"];
 $how=$_POST["how"];
 $sessionid = $_SESSION['userid'];
 
-$query = "insert into dates (sessionid, dates, feel)  values ('$sessionid','$date','$how')";
+$query = "insert into dates (sessionid, dates, feel) values ('$sessionid','$date','$how')";
 
 if(mysqli_query($connect,$query))
 {
