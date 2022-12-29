@@ -42,7 +42,7 @@ session_start();
         }?>
     <h1>How was your Date?</h1>
     <div>
-    <form method="POST">
+    <form action="./posting.php" method="POST">
         <input type="text" name="date" id="date" placeholder="22/12/31" pattern="[A-Za-z0-9/]{2,6}" required>
         <select action="./posting.php" name="how" id="how">
             <option value="">기분 선택</option>
