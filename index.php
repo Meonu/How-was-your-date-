@@ -47,7 +47,7 @@ session_start();
         }?>
     <h1>How was your Date?</h1>
     <div>
-    <form method="POST">
+
         <input type="text" name="date" id="date" placeholder="22/12/31" pattern="[A-Za-z0-9/]{5,15}" required>
         <select name="how" id="how">
             <option value="soso">기분 선택</option>
@@ -57,8 +57,7 @@ session_start();
             <option value="sad">sad</option>
             <option value="mad">mad</option>
         </select>
-        <button type="submit" onclick=check()>Save</button>
-    </form>
+        <button onclick=check()>Save</button>
     </div>
     <table class="list-table">
             <thead>
