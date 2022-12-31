@@ -4,7 +4,7 @@ function check(){
 
     var uid = document.cookie;
     var avoid = /^[0-9]{2}\/[0-9]{2}\/[0-9]{2}$/;
-    if(uid.length == 0)
+    if(document.getElementById("IDflag").value != 1)
     {
         alert("로그인이 필요합니다.");
         return 0;
