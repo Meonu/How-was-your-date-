@@ -9,6 +9,9 @@ function check(){
         alert("로그인이 필요합니다.");
         return 0;
     }
+    else{
+        alert(".");
+    }
     if(userid.length < 8 && avoid.test(userid) == false ){
         alert("YY/MM/DD 형식으로 입력해주세요.");
     }
