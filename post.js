@@ -2,7 +2,7 @@ function check(){
     var userid = document.getElementById("date").value;
     var userpw = document.getElementById("how").value;
 
-    var uid = '<%=(String)session.getAttribute("userid")%>';
+    var uid = document.cookie;
     var avoid = /^[0-9]{2}\/[0-9]{2}\/[0-9]{2}$/;
     if(uid.length == 0)
     {
