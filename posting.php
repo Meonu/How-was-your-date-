@@ -13,11 +13,6 @@ if (!isset($_SESSION['userid'])) {?>
     </script>
     <?php
 }
-else{
-    ?>
-    <input type="hidden" id="IDflag" value='1'>
-    <?php
-}
 
 $password = "kyw@514514514";
 

@@ -30,7 +30,8 @@ session_start();
         if (isset($_SESSION['userid'])) {
             echo "{$_SESSION['userid']}님 환영합니다  ";
             $userid = $_SESSION['userid'];
-        ?>
+         ?>
+        <input type="hidden" id="IDflag" value='1'>
             <li>
                 <a href="./logout.php">로그아웃</a>
             </li>
