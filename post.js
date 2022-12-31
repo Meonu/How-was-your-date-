@@ -21,6 +21,14 @@ function check(){
     http.open('post',url, true);
  
     http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+    http.onload = function () {
+        if (http.status === 200) {
+            uploadButton.innerHTML = http.responseText;
+        } else {
+            alert("No Hack!");
+        }
+    };
  
     http.send(params);
 
