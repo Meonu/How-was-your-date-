@@ -46,7 +46,7 @@ session_start();
             </li><?php
         }?>
     <h1>How was your Date?</h1>  
-    <input type="hidden" id="IDflag" value="<?php $userid ?>">
+    <input type="hidden" id="IDflag" value="<?php echo $userid ?>">
 
     <div>
 
