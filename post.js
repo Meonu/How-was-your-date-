@@ -3,6 +3,7 @@ function check(){
     var userpw = document.getElementById("how").value;
 
     var avoid = /^[0-9]{2}\/[0-9]{2}\/[0-9]{2}$/;
+    alert(document.getElementById("IDflag").value + document.getElementById("IDflag").value.length);
 
     if(document.getElementById("IDflag").value.length == 0)
     {
