@@ -26,10 +26,10 @@ session_start();
 </head>
 <body>
         <?php
-        $userid = '';
+         $userid = $_SESSION['userid'];
         if (isset($_SESSION['userid'])) {
             echo "{$_SESSION['userid']}님 환영합니다  ";
-            $userid = $_SESSION['userid'];
+           
          ?>
             <li>
                 <a href="./logout.php">로그아웃</a>
