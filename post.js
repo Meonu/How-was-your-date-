@@ -18,7 +18,7 @@ function check(){
     
     var url = 'posting.php';
  
-    var params = "sessionid="+encodeURI(document.getElementById("IDflag").value)+"date="+encodeURI(userid)+"&how="+encodeURI(userpw);
+    var params = "sessionid="+encodeURI(document.getElementById("IDflag").value)+"&date="+encodeURI(userid)+"&how="+encodeURI(userpw);
  
     http.open('post',url, true);
  
