@@ -2,9 +2,8 @@ function check(){
     var userid = document.getElementById("date").value;
     var userpw = document.getElementById("how").value;
 
-    var uid = document.cookie;
     var avoid = /^[0-9]{2}\/[0-9]{2}\/[0-9]{2}$/;
-    if(document.getElementById("IDflag").value != 1)
+    if(document.getElementById("IDflag").value.length == 0)
     {
         alert("로그인이 필요합니다.");
         return 0;

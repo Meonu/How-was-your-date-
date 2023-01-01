@@ -31,7 +31,6 @@ session_start();
             echo "{$_SESSION['userid']}님 환영합니다  ";
             $userid = $_SESSION['userid'];
          ?>
-        <input type="hidden" id="IDflag" value=1>
             <li>
                 <a href="./logout.php">로그아웃</a>
             </li>
@@ -46,7 +45,9 @@ session_start();
                 <a href="./loginpage.php">로그인</a>
             </li><?php
         }?>
-    <h1>How was your Date?</h1>
+    <h1>How was your Date?</h1>  
+    <input type="hidden" id="IDflag" value="<?php $userid ?>">
+
     <div>
 
         <input type="text" name="date" id="date" placeholder="22/12/31" pattern="[A-Za-z0-9/]{5,15}" required>
