@@ -46,7 +46,7 @@ session_start();
             </li><?php
         }?>
     <h1>How was your Date?</h1>  
-    <h3>개발자의 역량 부족으로 save이후 새로고침을 해주셔야 보입니다.</h3>
+    <h5>개발자의 역량 부족으로 save이후 새로고침을 해주셔야 보입니다.</h5>
     <input type="hidden" id="IDflag" value="<?php echo $userid ?>">
 
     <div>
